@@ -1,0 +1,487 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height: 1;
+  color: black;
+  background: white;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+/*整體設定*/
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+/*按鈕*/
+.btn {
+  padding: 8px 32px !important;
+}
+
+button:focus + .btn, .btn:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+/*距離*/
+.mb-all {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 768px) {
+  .mb-all {
+    margin-bottom: 100px;
+  }
+}
+
+/*卡片樣式*/
+.card-style {
+  border-radius: 12px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+  background: white;
+}
+
+/*字型大小*/
+.fs-12 {
+  font-size: 0.5rem;
+}
+
+.fs-32 {
+  font-size: 2rem;
+}
+
+/*首尾*/
+.logo {
+  height: 40px;
+}
+
+.bottom {
+  background: #F5F5F5;
+  line-height: 56px;
+}
+
+.bottom p {
+  margin-bottom: 0 !important;
+}
+
+/*顏色*/
+.bg-blue {
+  background: #56C4C5 !important;
+}
+
+.bg-red {
+  background: #FF5D50 !important;
+}
+
+.text-blue {
+  color: #56C4C5 !important;
+}
+
+.bg_home, .circle1, .circle2, .circle3, .home_footer_sm {
+  z-index: -999;
+}
+
+.circle1 {
+  width: 360px;
+  height: 360px;
+  top: 20%;
+  left: -180px;
+  background: #56C4C5 !important;
+}
+
+.circle2 {
+  width: 310px;
+  height: 310px;
+  right: 0;
+  -webkit-clip-path: circle(50% at 69% 50%);
+          clip-path: circle(50% at 69% 50%);
+  background: #56C4C5 !important;
+  opacity: 0.7;
+}
+
+.circle3 {
+  width: 150px;
+  height: 150px;
+  left: 200px;
+  bottom: 10%;
+  background: #F5CA52;
+  opacity: 0.5;
+}
+
+.goTop {
+  width: 70px;
+  height: 70px;
+  margin-right: 48px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  z-index: 999;
+  border: none;
+}
+
+.hide {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
+}
+
+.header .header_info h1 {
+  font-size: 18px;
+  color: #56C4C5 !important;
+}
+
+.header .header_info h1 span {
+  font-size: 48px;
+}
+
+.header .header_info p {
+  font-size: 20px;
+}
+
+.plat li {
+  text-align: center;
+}
+
+.plat li p {
+  color: #747474;
+}
+
+.plat li img {
+  width: 90px;
+  margin: 0 auto;
+}
+
+.role img {
+  border-radius: 12px 12px 0 0;
+}
+
+.role .role_info {
+  padding: 16px;
+}
+
+.role .role_info h4 {
+  color: #56C4C5 !important;
+}
+
+.chat_info .chat_card {
+  padding: 32px 0 48px 32px;
+  height: auto;
+  margin-bottom: 28px;
+}
+
+.chat_info .chat_card h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.chat_info .chat_card .rounded-circle {
+  padding: 20px;
+  width: 86px;
+  margin-bottom: 24px;
+  -webkit-box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.user .user_card {
+  padding: 48px 32px 24px 32px;
+  height: 100%;
+}
+
+.user .user_card img {
+  width: 80px;
+  position: absolute;
+  top: -40px;
+  border-radius: 50%;
+}
+
+.user .user_name {
+  position: relative;
+  font-weight: bold;
+}
+
+.user .user_name::after {
+  content: " ★ ★ ★ ★ ★";
+  color: #F5CA52;
+  font-size: 20px;
+  position: absolute;
+  right: 0.5rem;
+}
+
+.footer {
+  margin-top: 100px;
+}
+
+.footer img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 992px) {
+  .footer .footer_text {
+    top: 75%;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+}
+
+.program_bg {
+  background: url(../images/banner.svg) no-repeat top right;
+}
+
+.program_bg::after {
+  content: "";
+  height: 470px;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  background: #F7F9FD;
+  border-radius: 0 0 0 300px;
+  z-index: -999;
+}
+
+.program_title {
+  padding: 92px 0 180px 0;
+}
+
+.program_title span {
+  font-size: 16px;
+}
+
+.priceBtn_scroller {
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+
+.priceBtn_scroller ul {
+  padding-bottom: 1rem;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.priceBtn_scroller button {
+  margin-right: 16px;
+  border: 1px solid #56C4C5 !important;
+  border-radius: 50rem;
+  color: #56C4C5 !important;
+}
+
+.priceBtn_scroller button:hover {
+  background: #56C4C5 !important;
+  color: white !important;
+}
+
+.priceBtn_scroller button:focus {
+  background: #56C4C5 !important;
+  color: white !important;
+}
+
+.price .card-body {
+  position: relative;
+  margin-bottom: 24px;
+}
+
+@media (min-width: 992px) {
+  .price .card-body {
+    margin-bottom: 0;
+    height: 100%;
+  }
+}
+
+.price button {
+  bottom: 24px;
+}
+
+.price_info {
+  margin-bottom: 100px;
+}
+
+.price_info .text {
+  background: #F5F5F5;
+  padding: 1rem 1.5em;
+  border-radius: 12px;
+  white-space: nowrap;
+  margin-bottom: 32px;
+}
+
+.price_info li {
+  position: relative;
+}
+
+.price_info li::before {
+  content: "";
+  background-image: url(../images/icon_check.svg);
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  left: -20px;
+}
+
+.accordion-button {
+  border-radius: 12px !important;
+}
+
+.accordion-button:focus {
+  outline: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+strong {
+  color: #747474;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #56C4C5 !important;
+  background: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.accordion-button::after {
+  background-image: url(../images/icon_plus.svg) !important;
+  background-position: center !important;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background-image: url(../images/icon_minus.svg) !important;
+}
+
+strong {
+  line-height: 2 !important;
+}
+
+@-webkit-keyframes heard_icon {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+@keyframes heard_icon {
+  0%, 100% {
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+  50% {
+    -webkit-transform: translateY(-30px);
+            transform: translateY(-30px);
+  }
+}
+
+.header_img .home_people {
+  -webkit-animation: heard_icon 2s infinite;
+          animation: heard_icon 2s infinite;
+}
+
+.header_img .good {
+  top: 45%;
+  right: 5%;
+  -webkit-animation: heard_icon 3s infinite;
+          animation: heard_icon 3s infinite;
+}
+
+.header_img .lvoe {
+  top: 1%;
+  left: 20%;
+  -webkit-animation: heard_icon 4s infinite;
+          animation: heard_icon 4s infinite;
+}
+
+.header_img .peolpe {
+  top: 30%;
+  left: -10%;
+  -webkit-animation: heard_icon 6s infinite;
+          animation: heard_icon 6s infinite;
+}
+
+.header_img .chat_1 {
+  top: 10%;
+  left: -20%;
+  opacity: 0.7;
+  -webkit-animation: heard_icon 3s infinite;
+          animation: heard_icon 3s infinite;
+}
+
+.header_img .chat_2 {
+  top: 60%;
+  left: -20%;
+  opacity: 0.8;
+  -webkit-animation: heard_icon 3s 1s infinite;
+          animation: heard_icon 3s 1s infinite;
+}
+
+.header_img .chat_3 {
+  top: 65%;
+  right: -3%;
+  opacity: 0.6;
+  -webkit-animation: heard_icon 4s 2s infinite;
+          animation: heard_icon 4s 2s infinite;
+}
+/*# sourceMappingURL=all.css.map */

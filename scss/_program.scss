@@ -1,0 +1,138 @@
+// 方案背景
+.program_bg{
+    background: url(../images/banner.svg) no-repeat top right;
+
+}
+.program_bg::after{
+    content:"";
+    height: 470px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    background: #F7F9FD;
+    border-radius: 0 0 0 300px;
+    z-index: -999;
+}
+
+// 方案標題
+
+.program_title{
+    padding: 92px 0 180px 0;
+    span{
+        font-size: 16px;
+    }
+}
+
+// 方案按鈕
+
+.priceBtn_scroller{
+    height: 2.75rem;
+    // padding-bottom: 1rem;
+    overflow-y: hidden;
+    ul{
+        padding-bottom: 1rem;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    button{
+        margin-right: 16px;
+        border: 1px solid $blue;
+        border-radius: 50rem;
+        color: $blue;
+   
+    }
+    button:hover{
+        background: $blue;
+        color: white !important ;
+    }
+    button:focus{
+        
+        background: $blue;
+        color: white !important;
+        
+    }
+}
+
+// .active{
+//     background: $blue !important;
+//     color: white !important;
+// }
+
+// 方案內容
+
+.price{
+    .card-body{ 
+        position: relative;
+        margin-bottom: 24px;
+        @media (min-width: 992px){
+            margin-bottom: 0;
+            height: 100%;
+        }
+
+    } 
+    button{
+        bottom: 24px;
+    }
+   
+
+}
+
+.price_info{
+    margin-bottom: 100px;
+    .text{
+        background: $light_grey;
+        padding: 1rem 1.5em;
+        border-radius: 12px;
+        white-space:nowrap;
+        margin-bottom: 32px;
+    }
+    li{
+        position: relative;
+    }
+    li::before{
+        content: "";
+        background-image: url(../images/icon_check.svg) ;  
+        height: 16px;
+        width: 16px;
+        position: absolute;
+        left:-20px;
+    } 
+  
+ 
+}
+
+// 常見問題
+
+.accordion-button{
+  border-radius: 12px!important;
+
+}
+
+.accordion-button:focus{
+    outline: 0!important;
+    box-shadow: none!important;
+  }
+
+strong{
+    color: $grey;
+}
+
+.accordion-button:not(.collapsed) {
+  color: $blue;
+  background: none!important;
+  box-shadow:none!important;
+
+}
+.accordion-button::after{
+       background-image: url(../images/icon_plus.svg)!important;
+      background-position: center !important;
+
+}
+
+.accordion-button:not(.collapsed)::after{
+    background-image: url(../images/icon_minus.svg) !important;
+}
+
+strong{
+  line-height: 2!important;
+}

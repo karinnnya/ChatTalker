@@ -1,0 +1,63 @@
+@keyframes heard_icon{
+    0%,100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+}
+
+// @keyframes heard_icon2{
+//     0%,100% {
+//         transform: translateY(0px);
+//     }
+//     50% {
+//         transform: translateY(-30px);
+//     }
+
+// }
+
+.header_img{
+ 
+    .home_people{
+
+        animation: heard_icon 2s infinite;
+        
+    }
+    .good{
+        top: 45%;
+        right: 5%;
+        animation: heard_icon 3s infinite;
+        
+    }
+
+    .lvoe{
+        top: 1%;
+        left: 20%;
+        animation: heard_icon 4s infinite;
+    }
+    .peolpe{
+        top: 30%;
+        left: -10%;
+        animation: heard_icon 6s infinite;
+    }
+    .chat_1{
+        top: 10%;
+        left: -20%;
+        opacity: 0.7;
+        animation: heard_icon 3s infinite; 
+    }
+    .chat_2{
+        top: 60%;
+        left: -20%;
+        opacity: 0.8;
+        animation: heard_icon 3s 1s infinite;
+    }
+    .chat_3{
+        top:65%;
+        right:-3%;
+        opacity: 0.6;
+        animation: heard_icon 4s 2s infinite;
+    }
+}
+

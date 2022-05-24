@@ -1,0 +1,165 @@
+// 首頁背景
+
+.bg_home,.circle1,.circle2,.circle3,.home_footer_sm{
+    z-index: -999;
+}
+.circle1{
+    width: 360px;
+    height: 360px;
+    top: 20%;
+    left: -180px;
+    background: $blue;
+}
+.circle2{
+    width: 310px;
+    height: 310px;
+    right: 0;
+    clip-path: circle(50% at 69% 50%);
+    background: $blue;
+    opacity: 0.7;
+    
+}
+.circle3{
+    width: 150px;
+    height: 150px;
+    left: 200px;  
+    bottom: 10%;
+    background: $yellow;
+    opacity: 0.5;  
+}
+
+// 右側向上按鈕
+.goTop{
+    width: 70px;
+    height: 70px;
+    margin-right: 48px;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    z-index: 999;
+    border:none;
+
+}
+
+.hide {
+    transform: translateX(120%);
+}
+
+// 標題
+.header{
+    .header_info{
+        h1{
+            font-size: 18px;  
+            color: $blue; 
+            span{
+        
+               font-size: 48px;
+            }
+        }
+        p{
+            font-size: 20px;
+        }
+
+    }
+}
+
+// 三大平台，我來搞定
+.plat{
+    li{
+        text-align: center;
+        p{
+            color: $grey;
+        }
+        img{
+            width: 90px; 
+            margin: 0 auto; 
+            
+        }
+    }
+}
+
+// 任何的角色，我都能給
+
+.role{
+    img{
+        border-radius: 12px 12px 0 0;
+    }
+    .role_info{
+        padding: 16px;
+        h4{
+            color: $blue;
+        }
+    }
+
+}
+
+
+// 快速了解客戶輪廓
+
+
+.chat_info{
+    .chat_card{
+        padding: 32px 0 48px 32px;
+        height: auto;
+        margin-bottom: 28px;
+        
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .rounded-circle{
+            padding: 20px;
+            width: 86px;
+            margin-bottom: 24px;
+            box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.2);
+        }
+    }
+
+}
+
+// 好評如潮
+
+.user{
+    .user_card{
+        padding: 48px 32px 24px 32px;
+        height: 100%;
+        img{
+            width: 80px;
+            position: absolute;
+            top: -40px;
+            border-radius: 50%;
+        }
+    }
+    .user_name{
+        position: relative;
+        font-weight: bold;
+    }
+    .user_name::after{
+        content: " ★ ★ ★ ★ ★";
+        color: $yellow;
+        font-size: 20px;
+        position: absolute;
+        right: 0.5rem;
+    }
+
+}
+
+// 尾端banner
+
+.footer{
+    margin-top: 100px;
+    img{
+        width: 100%;
+        height: auto;
+    }
+    
+    .footer_text{
+        @media (min-width: 992px){
+            top:75%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+}
+
