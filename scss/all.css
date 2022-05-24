@@ -258,6 +258,7 @@ button:focus + .btn, .btn:focus {
 .user .user_name {
   position: relative;
   font-weight: bold;
+  padding-bottom: 10px;
 }
 
 .user .user_name::after {
