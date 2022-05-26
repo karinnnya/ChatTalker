@@ -339,6 +339,11 @@ button:focus + .btn, .btn:focus {
   color: white !important;
 }
 
+.active {
+  background: #56C4C5 !important !important;
+  color: white !important;
+}
+
 .price .card-body {
   position: relative;
   margin-bottom: 24px;

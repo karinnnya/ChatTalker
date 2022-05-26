@@ -1,3 +1,17 @@
+// const swiper = new Swiper(".mySwiper", {
+//   slidesPerView: 1,
+//   spaceBetween: 30,
+//   autoHeight: true,
+//   autoplay: {
+//       delay: 3000,
+//       disableOnInteraction: false,
+//   },
+//   breakpoints: {
+//       992: {
+//           slidesPerView: 3,
+//       },
+//   },
+// });
 
 
 const price_btn10 = document.getElementById('price_btn10');
@@ -21,7 +35,6 @@ price_btn10.addEventListener('click', function() {
 );
 
 price_btn15.addEventListener('click', function() {
-  
     // price_btn15.classList.add("active");
 
     people_sub[0].textContent=15000;
@@ -81,17 +94,7 @@ function scrollFunction() {
 //   }
 // )
 
-// const swiper = new Swiper(".mySwiper", {
-//   slidesPerView: 1,
-//   spaceBetween: 30,
-//   autoHeight: true,
-//   autoplay: {
-//       delay: 3000,
-//       disableOnInteraction: false,
-//   },
-//   breakpoints: {
-//       992: {
-//           slidesPerView: 3,
-//       },
-//   },
-// });
+// $('.btn_price').click(function(e){
+//   e.preventDefault();
+//   $('.btn_price').addClass('active'); 
+// })
